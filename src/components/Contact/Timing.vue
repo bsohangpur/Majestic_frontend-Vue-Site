@@ -21,7 +21,16 @@
             Shop is currently closed.
           </div>
           <div class="mt-2 font-semibold">
-            {{ remainingTime }}&nbsp;<span :class="isShopOpen ? 'text-green-500' : 'text-red-500'">to Close</span> 
+            {{ remainingTime }}&nbsp;<span
+              class="text-green-500"
+              v-if="isShopOpen"
+              >to Close</span
+            >
+            <span
+              class="text-red-500"
+              v-else="!isShopOpen"
+              >to Open</span
+            >
           </div>
         </div>
       </div>
@@ -79,9 +88,11 @@ export default {
         const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
         const seconds = Math.floor((timeDiff / 1000) % 60);
 
-        console.log(`${hours.toString().padStart(2, "0")}:${minutes
-          .toString()
-          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`)
+        console.log(
+          `${hours.toString().padStart(2, "0")}:${minutes
+            .toString()
+            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`
+        );
         // Format the remaining time
         return `${hours.toString().padStart(2, "0")}:${minutes
           .toString()

@@ -13,9 +13,10 @@
           Providing exceptional care for animels
         </h2>
         <p class="text-lg mb-8 md:mr-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          consequat ligula a lacus scelerisque, et placerat augue consectetur.
-          Curabitur vehicula faucibus lacus.
+          Welcome to Majestic Veterinary , where your furry companions are our
+          top priority. We understand the deep bond you share with your beloved
+          pets, and that's why we're dedicated to providing exceptional
+          veterinary products to ensure their health and happiness.
         </p>
         <a
           href="#"
