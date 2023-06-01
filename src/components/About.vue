@@ -46,7 +46,7 @@
           </p>
           <a
             href="#contact"
-            class="inline-block px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-400 transition-colors duration-300"
+            class="inline-block no-underline px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-400 transition-colors duration-300"
           >
             Contact Us
           </a>

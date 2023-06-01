@@ -20,18 +20,6 @@
           <div v-else class="text-red-500 font-semibold">
             Shop is currently closed.
           </div>
-          <div class="mt-2 font-semibold">
-            {{ remainingTime }}&nbsp;<span
-              class="text-green-500"
-              v-if="isShopOpen"
-              >to Close</span
-            >
-            <span
-              class="text-red-500"
-              v-else="!isShopOpen"
-              >to Open</span
-            >
-          </div>
         </div>
       </div>
     </div>
@@ -53,71 +41,6 @@ export default {
       ],
       isShopOpen: true,
     };
-  },
-  computed: {
-    remainingTime() {
-      const now = new Date();
-      const opening = new Date();
-      const closing = new Date();
-      opening.setHours(9);
-      closing.setHours(17);
-
-      // Check if the shop is currently open
-      if (now >= opening && now < closing) {
-        // Calculate the time remaining until closing
-        const timeDiff = closing - now;
-        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-        const seconds = Math.floor((timeDiff / 1000) % 60);
-
-        // Format the remaining time
-        return `${hours.toString().padStart(2, "0")}:${minutes
-          .toString()
-          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-      } else {
-        // Calculate the time remaining until opening
-        let timeDiff;
-        if (now < opening) {
-          timeDiff = opening - now;
-        } else {
-          // Add 1 day to the opening time if it's already past the opening hour today
-          opening.setDate(opening.getDate() + 1);
-          timeDiff = opening - now;
-        }
-        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDiff / (1000 * 60)) % 60);
-        const seconds = Math.floor((timeDiff / 1000) % 60);
-
-        console.log(
-          `${hours.toString().padStart(2, "0")}:${minutes
-            .toString()
-            .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`
-        );
-        // Format the remaining time
-        return `${hours.toString().padStart(2, "0")}:${minutes
-          .toString()
-          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-      }
-    },
-  },
-  methods: {
-    shopStatus() {
-      const date = new Date();
-      if (date.getDay() === 0) {
-        this.isShopOpen = false;
-      } else if (
-        date.getHours() < 9 ||
-        (date.getHours() === 17 && date.getMinutes() >= 0)
-      ) {
-        this.isShopOpen = false;
-      } else {
-        this.isShopOpen = true;
-      }
-    },
-  },
-  created() {
-    this.shopStatus();
-    setInterval(this.shopStatus, 60000);
   },
 };
 </script>

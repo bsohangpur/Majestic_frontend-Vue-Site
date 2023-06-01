@@ -20,7 +20,7 @@
         </p>
         <a
           href="#"
-          class="bg-green-500 text-white py-2 px-4 rounded hover:bg-green-400 transition duration-300"
+          class="bg-green-500 no-underline text-white py-2 px-4 rounded hover:bg-green-400 transition duration-300"
           >Learn More</a
         >
       </div>

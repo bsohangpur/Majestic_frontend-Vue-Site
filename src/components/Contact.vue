@@ -6,7 +6,14 @@
           <!-- Address and Map section -->
           <div class="mb-6">
             <h3 class="text-xl font-semibold mb-1">Address</h3>
-            <p>123 Animal Street</p>
+            <p>Highway Al Saad Ramlat - BLOCK-801, 
+              <br/>
+              PLOT 755 - Al Ain - Sweihan
+              <br/>
+              Abu Dhabi Rd - Al Sad - Abu Dhabi
+              <br/>
+              United Arab Emirates
+            </p>
             <p>Dubai, UAE</p>
           </div>
           <div class="mb-6">
@@ -15,7 +22,7 @@
             <iframe
               alt="Map"
               title="Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.1989837768533!2d55.3125573!3d25.2320463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x952acaa0a4320b8!2sMajestic%20Veterinary%20Clinic!5e0!3m2!1sen!2s!4v1624536345738!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360992.73291358097!2d55.3491869!3d24.2599086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzM4LjkiTiA1NcKwMjcnMjMuMyJF!5e0!3m2!1sen!2s!4v1622540600659!5m2!1sen!2s"
               width="500"
               height="350"
               allowFullScreen="true"
@@ -276,3 +283,4 @@ body {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 </style>
+
