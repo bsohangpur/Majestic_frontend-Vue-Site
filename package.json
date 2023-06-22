@@ -9,9 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.0",
-    "@emotion/styled": "^11.11.0",
-    "framer-motion": "^4.1.17",
     "oh-vue-icons": "^1.0.0-rc3",
     "swiper": "^9.3.2",
     "vue": "^3.2.47",

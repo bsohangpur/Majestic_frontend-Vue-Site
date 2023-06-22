@@ -10,8 +10,8 @@ import {
 
 <template>
   <Product_Hero />
-  <Product />
+  <!-- <Product /> -->
   <TrustSignals />
   <Disclaimer />
-  <WarrantyGuarantee />
+  <!-- <WarrantyGuarantee /> -->
 </template>

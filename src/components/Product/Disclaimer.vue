@@ -10,21 +10,20 @@
               well-being and health of your beloved pets. Our services include:
             </p>
             <ul class="list-disc pl-6 mb-6">
-              <li>Veterinary check-ups and consultations</li>
-              <li>Vaccinations and preventive care</li>
-              <li>Surgical procedures</li>
-              <li>Dental care</li>
-              <li>Emergency care</li>
-              <li>Boarding and grooming</li>
+              <li>Over-the-Counter Products</li>
+              <li>Veterinary-Specific Medications</li>
+              <li>Compounded Medications</li>
+              <li>Prescription Medications</li>
+              <li>Medication Safety and Quality</li>
             </ul>
             <p class="mb-4">
               We have a team of experienced veterinarians and staff who are
               dedicated to providing the best possible care for your animals.
             </p>
-            <p class="mb-4">
+            <!-- <p class="mb-4">
               To learn more about our services, please visit our
               <a href="/services" class="text-green-500 hover:underline">Services</a> page.
-            </p>
+            </p> -->
           </div>
           <div>
             <h3 class="text-xl font-semibold mb-4">Our Products</h3>
@@ -43,10 +42,10 @@
               We carefully select our products to ensure they meet the highest
               standards of quality and safety for your pets.
             </p>
-            <p class="mb-4">
+            <!-- <p class="mb-4">
               To explore our product offerings, please visit our
               <a href="/products" class="text-green-500 hover:underline">Products</a> page.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>

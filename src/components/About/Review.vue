@@ -11,11 +11,14 @@
           <div class="flex items-center mb-4">
             <v-icon name="fa-user" class="mr-4 border-2 w-10 h-10 p-1 rounded-full"/>
             <div>
-              <h3 class="text-lg font-semibold">{{ review.name }}</h3>
-              <p class="text-gray-500">{{ review.location }}</p>
+              <div class="h-6 w-24 bg-green-600"></div>
+              <!-- <h3 class="text-lg font-semibold">{{ review.name }}</h3> -->
+              <div class="h-4 mt-2 w-24 bg-green-200"></div>
+              <!-- <p class="text-gray-500">{{ review.location }}</p> -->
             </div>
           </div>
-          <p class="text-gray-700">{{ review.content }}</p>
+          <div class="h-24 w-68 bg-green-50"></div>
+          <!-- <p class="text-gray-700">{{ review.content }}</p> -->
         </div>
       </div>
     </div>

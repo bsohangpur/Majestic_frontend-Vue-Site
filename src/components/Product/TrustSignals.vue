@@ -12,9 +12,9 @@
             Our team consists of experienced and skilled veterinarians who are
             dedicated to providing top-notch care for your animals.
           </p>
-          <a href="#" class="text-green-500 font-semibold hover:underline"
+          <!-- <a href="#" class="text-green-500 font-semibold hover:underline"
             >Learn More</a
-          >
+          > -->
         </div>
         <div class="bg-white rounded-lg shadow-lg p-6">
           <div class="flex items-center mb-4">
@@ -30,9 +30,9 @@
             care, diagnostics, surgeries, vaccinations, and more to ensure the
             well-being of your animals.
           </p>
-          <a href="#" class="text-green-500 font-semibold hover:underline"
+          <!-- <a href="#" class="text-green-500 font-semibold hover:underline"
             >Learn More</a
-          >
+          > -->
         </div>
         <div class="bg-white rounded-lg shadow-lg p-6">
           <div class="flex items-center mb-4">
@@ -48,9 +48,9 @@
             medications, supplements, grooming supplies, and more to meet the
             needs of your animals.
           </p>
-          <a href="#" class="text-green-500 font-semibold hover:underline"
+          <!-- <a href="#" class="text-green-500 font-semibold hover:underline"
             >Learn More</a
-          >
+          > -->
         </div>
         <div class="bg-white rounded-lg shadow-lg p-6">
           <div class="flex items-center mb-4">
@@ -65,9 +65,9 @@
             We are committed to providing exceptional care for your animals,
             ensuring their health, happiness, and overall well-being.
           </p>
-          <a href="#" class="text-green-500 font-semibold hover:underline"
+          <!-- <a href="#" class="text-green-500 font-semibold hover:underline"
             >Learn More</a
-          >
+          > -->
         </div>
       </div>
     </div>

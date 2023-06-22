@@ -5,6 +5,6 @@ import { Hero, About, Product, Contact } from "../components";
 <template>
   <Hero />
   <About />
-  <Product />
+  <!-- <Product /> -->
   <Contact />
 </template>

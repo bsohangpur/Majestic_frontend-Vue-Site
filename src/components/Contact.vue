@@ -6,15 +6,15 @@
           <!-- Address and Map section -->
           <div class="mb-6">
             <h3 class="text-xl font-semibold mb-1">Address</h3>
-            <p>Highway Al Saad Ramlat - BLOCK-801, 
-              <br/>
-              PLOT 755 - Al Ain - Sweihan
-              <br/>
-              Abu Dhabi Rd - Al Sad - Abu Dhabi
-              <br/>
-              United Arab Emirates
+            <p>
+              Highway Al Saad Ramlat
+              <br />
+              BLOCK-801, PLOT 755 <br />
+              Al Ain - Sweihan
+              <br />
+              Abu Dhabi Rd - Al Sad
             </p>
-            <p>Dubai, UAE</p>
+            <p>Abu Dhabi</p>
           </div>
           <div class="mb-6">
             <h3 class="text-xl font-semibold mb-1">Map</h3>
@@ -22,7 +22,7 @@
             <iframe
               alt="Map"
               title="Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360992.73291358097!2d55.3491869!3d24.2599086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDIxJzM4LjkiTiA1NcKwMjcnMjMuMyJF!5e0!3m2!1sen!2s!4v1622540600659!5m2!1sen!2s"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=24.231095,%2055.460326+(Majestic%20Veterinary)&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
               width="500"
               height="350"
               allowFullScreen="true"
@@ -35,7 +35,13 @@
           <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
           <div class="formbold-main-wrapper">
             <div class="formbold-form-wrapper">
-              <form @submit.prevent="handleSubmit" class="w-full mx-auto md:order-1">
+              <form
+                id="my-form"
+                @submit.prevent="handleSubmit"
+                action="https://formspree.io/f/mqkorrad"
+                method="POST"
+                class="w-full mx-auto md:order-1"
+              >
                 <div class="formbold-input-flex">
                   <div>
                     <p v-if="errors.name" class="text-red-500 mt-1 text-xs">
@@ -96,10 +102,15 @@
                     placeholder="Write your message..."
                     class="formbold-form-input"
                   ></textarea>
-                  <label for="message" class="formbold-form-label">Message</label>
+                  <label for="message" class="formbold-form-label"
+                    >Message</label
+                  >
                 </div>
-                <button type="submit" class="formbold-btn">Send Message</button>
+                <button id="my-form-button" type="submit" class="formbold-btn">
+                  Send Message
+                </button>
               </form>
+              <p style="display: none;" class=" text-green-600 mt-4 text-2xl border p-4" id="my-form-status"></p>
             </div>
           </div>
         </div>
@@ -124,31 +135,63 @@ export default {
     };
   },
   methods: {
-    async handleSubmit() {
-      try {
-        const schema = Yup.object().shape({
-          name: Yup.string().required("Name is required"),
-          email: Yup.string().email("Invalid email").required("Email is required"),
-          phone: Yup.string().required("Phone Number is required"),
-          message: Yup.string().required("Message is required"),
+    async handleSubmit(event) {
+      const schema = Yup.object().shape({
+        name: Yup.string().required("Name is required"),
+        email: Yup.string()
+          .email("Invalid email")
+          .required("Email is required"),
+        phone: Yup.string().required("Phone Number is required"),
+        message: Yup.string().required("Message is required"),
+      });
+
+      await schema.validate(this.form, { abortEarly: false });
+
+      // Form is valid, handle form submission logic here
+      var form = document.getElementById("my-form");
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            status.style.display = "block"
+            status.innerHTML = "Thanks for your submission!";
+            form.style.display = "none"
+            form.reset();
+          } else {
+            response.json().then((data) => {
+              if (Object.hasOwn(data, "errors")) {
+                status.innerHTML = data["errors"]
+                  .map((error) => error["message"])
+                  .join(", ");
+              } else {
+                status.innerHTML =
+                  "Oops! There was a problem submitting your form";
+              }
+            });
+          }
+        })
+        .catch((error) => {
+          if (error.name === "ValidationError") {
+            const errors = {};
+            error.inner.forEach((err) => {
+              errors[err.path] = err.message;
+            });
+            this.errors = errors;
+          } else {
+            console.error(error);
+          }
+          status.innerHTML = "Oops! There was a problem submitting your form";
         });
 
-        await schema.validate(this.form, { abortEarly: false });
-
-        // Form is valid, handle form submission logic here
-
-        console.log("Form submitted successfully");
-      } catch (error) {
-        if (error.name === "ValidationError") {
-          const errors = {};
-          error.inner.forEach((err) => {
-            errors[err.path] = err.message;
-          });
-          this.errors = errors;
-        } else {
-          console.error(error);
-        }
-      }
+      form.addEventListener("submit", handleSubmit);
     },
   },
 };
@@ -157,13 +200,11 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
 
 * {
   margin: 0;
@@ -283,4 +324,3 @@ body {
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
 </style>
-

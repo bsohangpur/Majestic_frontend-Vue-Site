@@ -9,14 +9,13 @@
             From food and supplements to grooming supplies and accessories, we
             have everything you need to keep your pets healthy and happy.
           </p>
-          <a
-            href="/products"
-            class="bg-green-500 text-white py-2 px-6 rounded hover:bg-green-400"
+          <p
+            class="bg-green-500 md:w-64 underline cursor-pointer text-center text-white py-2 px-6 rounded hover:bg-green-400"
           >
             Explore Our Products
-          </a>
+        </p>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0">
+        <!-- <div class="md:w-1/2 mt-8 md:mt-0">
           <div class="">
             <swiper
               :effect="'cards'"
@@ -53,8 +52,8 @@
                 </div>
               </swiper-slide>
             </swiper>
-          </div>
-        </div>
+          </div> 
+        </div> -->
       </div>
     </div>
   </div>

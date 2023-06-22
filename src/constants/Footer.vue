@@ -8,7 +8,7 @@ export default {
     return {
       social_links,
       links,
-      year
+      year,
     };
   },
 };
@@ -33,9 +33,11 @@ export default {
           <h2 class="text-2xl font-bold mb-4">Quick Links</h2>
           <ul class="space-y-2">
             <li v-for="link in links" :key="link.name">
-              <router-link :to="link.link" class="text-gray-50 hover:text-green-400">{{
-                link.name
-              }}</router-link>
+              <router-link
+                :to="link.link"
+                class="text-gray-50 hover:text-green-400"
+                >{{ link.name }}</router-link
+              >
             </li>
           </ul>
         </div>
@@ -43,9 +45,15 @@ export default {
         <!-- Footer Section 3-contact -->
         <div>
           <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
-          <p class="mb-2">123 Camel Street,</p>
-          <p class="mb-2">Desert City,</p>
-          <p>Camelland</p>
+          <p>
+            Highway Al Saad Ramlat
+            <br />
+            BLOCK-801, PLOT 755 <br />
+            Al Ain - Sweihan
+            <br />
+            Abu Dhabi Rd - Al Sad
+          </p>
+          <p>Abu Dhabi</p>
           <div class="mt-4"></div>
 
           <!-- Footer Section 3-social -->
@@ -70,7 +78,7 @@ export default {
     <!-- Footer Bottom -->
     <div class="bg-gray-900 py-4 px-4">
       <div class="container mx-auto text-center text-sm">
-        <p>&copy; {{year}} Majestic Veterinary. All rights reserved.</p>
+        <p>&copy; {{ year }} Majestic Veterinary. All rights reserved.</p>
       </div>
     </div>
   </footer>

@@ -1,10 +1,10 @@
 <template>
   <div class="bg-gray-100 py-12">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold mb-8">FAQ</h2>
+      <!-- <h2 class="text-3xl font-bold mb-8">FAQ</h2> -->
 
       <!-- What We Offer -->
-      <div class="mb-12">
+      <!-- <div class="mb-12">
         <h3 class="text-xl font-semibold mb-4">What We Offer</h3>
         <ul>
           <li class="mb-4">
@@ -17,7 +17,7 @@
             <a href="#" class="text-green-500 hover:underline">Pet Boarding</a> - When you're away, we offer a safe and comfortable environment for your pets with experienced staff to provide care, exercise, and attention.
           </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- Our Products -->
       <div>

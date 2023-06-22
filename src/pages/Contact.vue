@@ -4,8 +4,8 @@ import { Contact, TNC, PrivacyPolicy, Timing, FAQ } from "../components";
 
 <template>
   <Contact />
-  <TNC />
-  <PrivacyPolicy />
+  <!-- <TNC /> -->
+  <!-- <PrivacyPolicy /> -->
   <Timing />
   <FAQ />
 </template>

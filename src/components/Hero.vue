@@ -6,11 +6,11 @@
         <h1 class="text-4xl lg:text-6xl font-bold mb-4 hero_heading">
           Welcome to
           <span class="text-green-500 hero_heading_inner -tracking-wide"
-            >Animal Care</span
+            >Majestic Veterinary</span
           >
         </h1>
         <h2 class="text-xl text-yellow-200 lg:text-3xl mb-6">
-          Providing exceptional care for animels
+          Providing exceptional care for animals
         </h2>
         <p class="text-lg mb-8 md:mr-4">
           Welcome to Majestic Veterinary , where your furry companions are our
@@ -30,7 +30,7 @@
         <img
           src="https://img.freepik.com/free-photo/veterinarian-taking-care-lambs-sheep-farm_342744-426.jpg?w=900&t=st=1685102083~exp=1685102683~hmac=8e1e809f7cd1176ebec2325574d1b47d549e215ac4c86589e3313fcddd3b15b8"
           alt="Camel"
-          class="w-full rounded-lg shadow-lg"
+          class="w-full h-full object-center object-cover rounded-lg shadow-lg"
         />
       </div>
     </div>

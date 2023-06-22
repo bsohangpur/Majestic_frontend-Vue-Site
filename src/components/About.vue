@@ -4,9 +4,9 @@
       <div class="flex flex-col md:flex-row">
         <div class="md:w-1/2">
           <img
-            src="https://img.freepik.com/free-photo/man-reserve-is-playing-with-kangaroo_1157-33633.jpg?size=626&ext=jpg&uid=R99072542&semt=ais"
+            src="https://img.freepik.com/free-photo/veterinary-farm-walking-cowshed-checking-cows_1303-31023.jpg?w=900&t=st=1687422489~exp=1687423089~hmac=327c191a979148fe70d4ead974857b9202ac2a51189e506789b81e6f45701159"
             alt="Camel"
-            class="w-full h-auto md:max-w-md mx-auto rounded-lg shadow-lg"
+            class="w-full h-full object-cover object-center md:max-w-md mx-auto rounded-lg shadow-lg"
           />
         </div>
         <div class="md:w-1/2 md:ml-8 mt-8 md:mt-0">
@@ -26,30 +26,17 @@
             and loved from the moment they walk through our doors.
           </p>
           <p class="text-gray-800 mb-6">
-            Our mission is simple: to provide the highest quality of care for
-            your pets. From routine check-ups and vaccinations to complex
-            surgeries and specialized treatments, we offer a comprehensive range
-            of veterinary services tailored to meet the unique needs of each
-            animal.
-          </p>
-          <p class="text-gray-800 mb-6">
             But it's not just about medical expertise; it's about forming a
             genuine connection with your pets. We take the time to listen to
             your concerns and understand your pet's individual personality and
-            needs. Our team believes in building strong relationships with both
-            you and your furry companions, ensuring that every visit to our
-            clinic is a positive and comforting experience. We are honored to be
-            entrusted with the care of your beloved pets. When you choose
-            Majestic, you can rest assured that your furry family members are in
-            the best hands. Together, let's create a world where every pet
-            receives the love, compassion, and expert care they deserve.
+            needs.
           </p>
-          <a
-            href="#contact"
+          <router-link
+            to="/contact"
             class="inline-block no-underline px-6 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-400 transition-colors duration-300"
           >
             Contact Us
-          </a>
+          </router-link>
         </div>
       </div>
     </div>

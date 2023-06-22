@@ -60,8 +60,11 @@ export default {
         <div class="bg-white rounded shadow-lg p-6">
           <h3 class="text-xl font-semibold mb-4">Our Team</h3>
           <p class="text-gray-800">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            luctus sem id posuere malesuada.
+            At Majestic Veterinary, we are proud to have a team of highly skilled
+            and passionate professionals dedicated to the health and well-being
+            of animals. With extensive experience in veterinary medicine and a
+            deep love for animals, our team is committed to providing
+            top-quality pharmaceutical services.
           </p>
           <button
             @click="team('team')"

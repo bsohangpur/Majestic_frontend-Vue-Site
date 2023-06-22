@@ -3,7 +3,7 @@
   <nav class="bg-green-100">
     <div class="container mx-auto flex items-center justify-between px-4 py-4">
       <div class="flex items-center">
-        <img src="../assets/logo.png" alt="Logo" class="h-10 w-10 mr-4" />
+        <img src="../assets/logo.png" alt="Logo" class="h-16 w-24 mr-4" />
         <span class="text-gray-900 font-bold text-xl">Majestic Veterinary</span>
       </div>
 

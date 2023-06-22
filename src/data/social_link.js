@@ -1,32 +1,23 @@
 const social_links = [
     {
       icon: "fa-facebook",
-      link: "www.facebook.com",
+      link: "https://www.facebook.com/majestic.alain.35",
       color:"#0284c7",
     },
-    {
-      icon: "fa-twitter",
-      link: "www.twitter.com",
-      color:"#0284c7",
-    },
+
     {
       icon: "fa-instagram",
-      link: "www.instagram.com",
+      link: "https://www.instagram.com/majesticpharmacyalsaad/",
       color:"#c026d3",
     },
     {
-      icon: "fa-linkedin",
-      link: "www.linkedin.com",
-      color:"#60a5fa",
-    },
-    {
       icon: "fa-envelope",
-      link: "mailto:",
+      link: "mailto:majestic.pharm@gmail.com",
       color:"teal",
     },
     {
       icon: "fa-phone",
-      link: "tel:",
+      link: "tel:+917582663302",
       color:"#581c87",
     },
   ];

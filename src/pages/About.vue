@@ -4,6 +4,6 @@ import { About, WhoWeAre, Team, Review } from "../components";
 <template>
   <About />
   <WhoWeAre />
-  <Team />
+  <!-- <Team /> -->
   <Review />
 </template>
